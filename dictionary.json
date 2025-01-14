@@ -1214,9 +1214,9 @@
       "type": "string_t"
     },
     "cpu_architecture": {
-        "caption": "CPU Architecture",
-        "description": "The CPU architecture, normalized to the caption of the <code>cpu_architecture_id</code> value. In the case of <code>Other</code>, it is defined by the source.",
-        "type": "string_t"
+      "caption": "CPU Architecture",
+      "description": "The CPU architecture, normalized to the caption of the <code>cpu_architecture_id</code> value. In the case of <code>Other</code>, it is defined by the source.",
+      "type": "string_t"
     },
     "cpu_architecture_id": {
       "caption": "CPU Architecture ID",
@@ -1856,7 +1856,7 @@
       "description": "The drive type, normalized to the caption of the <code>drive_type_id</code> value. In the case of <code>Other</code>, it is defined by the source.",
       "type": "string_t"
     },
-    "drive_type_id" : {
+    "drive_type_id": {
       "caption": "Drive Type ID",
       "description": "Identifies the type of a disk drive, i.e. fixed, removable, etc.",
       "sibling": "drive_type",
@@ -2380,6 +2380,11 @@
       "caption": "Hire Time",
       "description": "The timestamp when the user was or will be hired by the organization.",
       "type": "timestamp_t"
+    },
+    "history": {
+      "caption": "Connection History",
+      "description": "The Connection History summarizes events in a network connection. For example <code> ShAD </code> representing SYN, SYN/ACK, ACK and Data exchange.",
+      "type": "string_t"
     },
     "horizontal_accuracy": {
       "caption": "Horizontal Accuracy",
@@ -3214,7 +3219,12 @@
     "message_trace_uid": {
       "caption": "Message Trace UID",
       "description": "The identifier that tracks a message that travels through multiple points of a messaging service.",
-      "references": [{"url": "https://learn.microsoft.com/en-us/previous-versions/office/developer/o365-enterprise-developers/jj984335(v=office.15)", "description": "For example Office 365 Message Trace Report."}],
+      "references": [
+        {
+          "url": "https://learn.microsoft.com/en-us/previous-versions/office/developer/o365-enterprise-developers/jj984335(v=office.15)",
+          "description": "For example Office 365 Message Trace Report."
+        }
+      ],
       "type": "string_t"
     },
     "message_uid": {
@@ -3248,6 +3258,11 @@
       "caption": "MIME type",
       "description": "The Multipurpose Internet Mail Extensions (MIME) type of the file, if applicable.",
       "type": "string_t"
+    },
+    "missed_bytes":  {
+      "caption": "Missed Bytes",
+      "description": "The number of bytes lost or unanalyzed due to incomplete data capture.",
+      "type": "long_t"
     },
     "model": {
       "caption": "Model",
