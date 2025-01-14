@@ -20,6 +20,9 @@
     "direction_id": {
       "requirement": "required"
     },
+    "history": {
+      "requirement": "optional"
+    },
     "protocol_name": {
       "requirement": "recommended"
     },
