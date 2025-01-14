@@ -82,7 +82,7 @@ Thankyou! -->
     1. Added `related_events_count` as an `int_t`. #1271
     1. Added `event_uid` as a `string_t`. #1312
     1. Added `debug` attribute as a `string_t` array, used in the `metadata` object. #1308
-    1. Added `history` and `missing_bytes` attributes. #1316
+    1. Added `history` and `missed_bytes` attributes. #1316
 
 * #### Objects
     1. Added `environment_variable` object. #1172, #1288
@@ -180,7 +180,7 @@ Thankyou! -->
     1. Added `debug` attribute to `metadata` object. #1308
     1. Added optional `url` attribute to the `file` object. This was allows capturing a file's URL in the File Hosting Activity (6006) event class. #1289
     1. Added `history` attribute to the `network_connection_info` object. #1316
-    1. Added `missing_bytes` attribute to the `network_traffic` object. #1316
+    1. Added `missed_bytes` attribute to the `network_traffic` object. #1316
 
 ### Bugfixes
 1. Added sibling definition to `confidence_id` in dictionary, accurately associating `confidence` as its sibling. #1180
