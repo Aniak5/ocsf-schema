@@ -82,7 +82,7 @@ Thankyou! -->
     1. Added `related_events_count` as an `int_t`. #1271
     1. Added `event_uid` as a `string_t`. #1312
     1. Added `debug` attribute as a `string_t` array, used in the `metadata` object. #1308
-    1. Added `cc_mailboxes`, `from_mailbox`, `to_mailboxes`, `delivered_to_mailbox` and `reply_to_mailbox`. #1307
+    1. Added `cc_mailboxes`, `from_mailbox`, `to_mailboxes`, `delivered_to_list`  and `reply_to_mailboxes`. #1307
 
 * #### Objects
     1. Added `environment_variable` object. #1172, #1288
@@ -181,7 +181,7 @@ Thankyou! -->
     1. Added `event_uid` to the `logger` object. #1312
     1. Added `debug` attribute to `metadata` object. #1308
     1. Added optional `url` attribute to the `file` object. This was allows capturing a file's URL in the File Hosting Activity (6006) event class. #1289
-    1. Added `cc_mailboxes`, `from_mailbox`, `to_mailboxes`, `delivered_to_mailbox` and `reply_to_mailbox` to `email` object. #1307
+    1. Added `cc_mailboxes`, `from_mailbox`, `to_mailboxes`, `delivered_to_list`  and `reply_to_mailboxes` to `email` object. #1307
 
 ### Bugfixes
 1. Added sibling definition to `confidence_id` in dictionary, accurately associating `confidence` as its sibling. #1180
@@ -202,7 +202,8 @@ Thankyou! -->
 1. Deprecated `package` in `Software Inventory Info` in favour of `sbom`. #1262
 1. Deprecated `product_uid` in favor of the `product` object. #1271
 1. Deprecated `policy` in favor of `policies` in `Account Change` class. #1282
-1. Deprecated `smtp_hello`, `smtp_from` and `smtp_to` in favor of `command`, `from` and `to` respectively. #1307 
+1. Deprecated `smtp_hello`, `smtp_from`, `smtp_to`, `delivered_to` and `reply_to` in favor of `command`, `from`, `to`, `delivered_to_list` and `reply_to_mailboxes` respectively. #1307
+
 ### Misc
 1. Added `user.uid` as an Observable type - `type_id: 31`. #1155
 1. Added `group.name` and `group.uid` as Observable types - `type_id: 32` and `type_id: 33`, respectively. #1155
