@@ -49,17 +49,22 @@ Thankyou! -->
 * #### Profiles
 * #### Objects
   1. Added `iam_role` object for user, role and group management. [#1603](https://github.com/ocsf/ocsf-schema/pull/1603)
+  1. Added `ai_agent` object representing an autonomous AI agent, distinct from the existing `agent` object (which models security sensors such as EDR, DLP, APM). [#1641](https://github.com/ocsf/ocsf-schema/pull/1641)
 * #### Dictionary Attributes
   1. Added `iam_role`, `iam_roles`, `updated_role`, `updated_group`, `updated_user` attributes. [#1603](https://github.com/ocsf/ocsf-schema/pull/1603)
   1. Added `initiator` and `initiator_id` attributes for identifying which endpoint initiated a network communication, with generic `Unknown (0)` and `Other (99)` enums. [#1598](https://github.com/ocsf/ocsf-schema/pull/1598)
+  1. Added `ai_agent` attribute referencing the new `ai_agent` object. [#1641](https://github.com/ocsf/ocsf-schema/pull/1641)
 ### Improved
 * #### Categories
 * #### Event Classes
   1. Added `iam_role` and role management support to `group_management`, `authorize_session`. Filled out the `group_management` class with complete lifecycle as well as added `resources`, `policies` to the discrete activities. [#1603](https://github.com/ocsf/ocsf-schema/pull/1603)
   1. Added `initiator_id` and `initiator` to `Network Activity` with network-specific enums `Source Endpoint (1)` and `Destination Endpoint (2)`, and updated `src_endpoint` and `dst_endpoint` descriptions to reflect bi-flow and asymmetric flow scenarios. [#1598](https://github.com/ocsf/ocsf-schema/pull/1598)
+  1. Added the `ai_operation` profile to `file_activity`, `network_activity`, `web_resources_activity`, `email_activity`, `script_activity`, and `scheduled_job_activity` for agent attribution on data-plane events. [#1641](https://github.com/ocsf/ocsf-schema/pull/1641)
 * #### Profiles
+  1. Added `ai_agent` attribute to the `ai_operation` profile. [#1641](https://github.com/ocsf/ocsf-schema/pull/1641)
 * #### Objects
   1. Added `iam_role` to `actor`. [#1603](https://github.com/ocsf/ocsf-schema/pull/1603)
+  1. Added `ai_agent` to `actor` (and to its `at_least_one` constraint) and to `process`. [#1641](https://github.com/ocsf/ocsf-schema/pull/1641)
 ### Deprecated
   1. Deprecated the `account_change` and `user_access_management` classes in favor of the `user_management` class. [#1603](https://github.com/ocsf/ocsf-schema/pull/1603)
   1. Deprecated the `user_result` attribute in favor of the `updated_user` attribute. [#1603](https://github.com/ocsf/ocsf-schema/pull/1603)
