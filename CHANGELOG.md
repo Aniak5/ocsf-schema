@@ -54,6 +54,7 @@ Thankyou! -->
   1. Added `iam_role`, `iam_roles`, `updated_role`, `updated_group`, `updated_user` attributes. [#1603](https://github.com/ocsf/ocsf-schema/pull/1603)
   1. Added `initiator` and `initiator_id` attributes for identifying which endpoint initiated a network communication, with generic `Unknown (0)` and `Other (99)` enums. [#1598](https://github.com/ocsf/ocsf-schema/pull/1598)
   1. Added `ai_agent` attribute referencing the new `ai_agent` object. [#1641](https://github.com/ocsf/ocsf-schema/pull/1641)
+  1. Added `charter` attribute (file type) for documents defining the role, scope, and operating bounds of an entity. [#1641](https://github.com/ocsf/ocsf-schema/pull/1641)
 ### Improved
 * #### Categories
 * #### Event Classes
@@ -65,6 +66,7 @@ Thankyou! -->
 * #### Objects
   1. Added `iam_role` to `actor`. [#1603](https://github.com/ocsf/ocsf-schema/pull/1603)
   1. Added `ai_agent` to `actor` (and to its `at_least_one` constraint) and to `process`. [#1641](https://github.com/ocsf/ocsf-schema/pull/1641)
+  1. Added `charter` attribute to `ai_agent` for the agent's durable role definition document (system prompt or constitution). [#1641](https://github.com/ocsf/ocsf-schema/pull/1641)
 ### Deprecated
   1. Deprecated the `account_change` and `user_access_management` classes in favor of the `user_management` class. [#1603](https://github.com/ocsf/ocsf-schema/pull/1603)
   1. Deprecated the `user_result` attribute in favor of the `updated_user` attribute. [#1603](https://github.com/ocsf/ocsf-schema/pull/1603)
